@@ -1,0 +1,70 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.navbar{
+    background-color: black;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: white;
+    color: rgb(2, 39, 204);
+}
+
+.max-h-100 {
+    width: 100%;
+    max-height: 460px;
+    position: relative;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover{
+    color: white;
+}
+
+.navbar-toggler{
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.section-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#sobre-a-stu, #fale-conosco{
+    background-color: #1e07831c;
+}
+
+.text-colored{
+    color: #0627b9;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button{
+    background-color: #0627b9;
+    color: white;
+}
+
+.nav-cardapio .nav-link:hover{
+    color: black;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+    .carousel-item img{
+    height: 280px
+    }
+}
+

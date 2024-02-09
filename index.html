@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stu Motors</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Nome do restaurante e links que ficam observando-->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-1">
+                Stu Motors
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <nav class="navbar-collapse collapse justify-content-end mt-3" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex"><!--Propriedade, breakpoint, valor-->
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#sobre-a-stu">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre A Stu Motors</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#produtos">
+                            <i class="bi bi-card-text me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Carrossel-->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <!--SOBRE-->
+        <section id="sobre-a-stu">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2750">
+                        <img class="d-block h-100 max-h-100 w-100 max-w-100" src="Fotos/Apresentação/Carro fundo montanhoso.jpg" alt="Foto espaço interno restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2750">
+                        <img class="d-block h-100 max-h-100 w-100 max-w-100" src="Fotos/Apresentação/Carro Laranja.jpg" alt="Taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2750">
+                        <img class="d-block h-100 max-h-100 w-100 max-w-100" src="Fotos/Apresentação/Carros em fileira.jpg" alt="Mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            
+    <!--Final do carrossel-->
+    <!--Sobre o Restaurante-->
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="Fotos/Apresentação/Carro chuva.jpg" class="d-block w-100 rounded" alt="Foto espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre a <span class="text-colored">Stu Motors</span></h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde sapiente, officia enim mollitia reprehenderit fugit nulla non atque dolore tempora laudantium saepe odit, quaerat quisquam dignissimos sit quibusdam eveniet alias!</p>
+                        <h3 class="section-title">Sobre o <span class="text-colored">Espaço</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nostrum distinctio labore impedit, ullam temporibus cum ea repudiandae perferendis non minima optio suscipit consequuntur magnam quidem iusto delectus expedita tenetur!</p>
+                        <ul>
+                            <li>Agende o seu Teste Drive</li>
+                            <li>Confira com os nossos vendedores formas de financeiamento</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Nav para o cardário-->
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-4">
+                        Nossos <span class="text-colored">Produtos</span>
+                    </h2>
+                </div>
+
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-cardapio">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#carros" class="nav-link fw-bold text-start text-colored active">Carros da Garagem</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#colecao" class="nav-link fw-bold text-start text-colored">Colecionáveis</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#motos" class="nav-link fw-bold text-start text-colored">Motos</button>
+                </aside>
+
+                <!--Bebidas Não Alcoolicas-->
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="carros">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100  mt-2" src="Fotos/Itens a venda/carros/Jeep.jpg" alt="">
+                                    <h5 class="text-colored fw-bold">Jeep</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 mt-2" src="Fotos/Itens a venda/carros/ford01.jpg" alt="">
+                                    <h5 class="text-colored fw-bold">Ford</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100  mt-2" src="Fotos/Itens a venda/carros/ford02.jpg" alt="">
+                                    <h5 class="text-colored fw-bold">Ford</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Bebidas Alcoolicas-->
+                        <div class="tab-pane" id="colecao">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100  mt-2" src="Fotos/Itens a venda/colecao/carro rosa.jpg" alt="">
+                                    <h5 class="text-colored fw-bold">Carro rosa</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 mt-2" src="Fotos/Itens a venda/colecao/carro vermelho.jpg" alt="">
+                                    <h5 class="text-colored fw-bold">Carro Vermelho</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100  mt-2" src="Fotos/Itens a venda/colecao/Fusca.jpg" alt="">
+                                    <h5 class="text-colored fw-bold">Fusca</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 mt-2" src="Fotos/Itens a venda/colecao/Opala.jpg" alt="">
+                                    <h5 class="text-colored fw-bold">Opala</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Entradas-->
+                    <div class="tab-pane" id="motos">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100  mt-2" src="Fotos/Itens a venda/motos/Moto Suzuki.jpg" alt="">
+                                <h5 class="text-colored fw-bold">Suzuki</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100  mt-2" src="Fotos/Itens a venda/motos/moto02.jpg" alt="">
+                                <h5 class="text-colored fw-bold">Moto</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--Fale conosco-->
+        <section id="fale-conosco">
+            <div class="container mb-3">
+                <div class="row">
+                    <h2 class="section-title text-center pt-5 pb-5">
+                        Fale <span class="text-colored">Conosco</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+
+                    <!--Redes Socais-->
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored ms-1 me-1"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua Taltaltal, n°, Bairro, Cidade, Estado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="scrypt.js"></script>
+</body>
+</html>
